@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="ROBOTS" content="NOODP" />
+        <meta content="utf-8" http-equiv="encoding">  
+      <meta name="viewport" content="initial-scale=1" />
+        <title><%= title %></title>
+       <%= stylesheet_link_tag :application, media: "all" %>
+      <%= csrf_meta_tags %>
+    </head>
+
+     <body>
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-static-top navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Admin</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+         
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+    <div>
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="container">
+
+        <%= render "application/flashes" -%>
+        <%= yield %>
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <%= render "application/javascript" %>
+  </body>
+</html>
+
