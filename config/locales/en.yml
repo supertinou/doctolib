@@ -1,19 +1,43 @@
+---
 en:
+  admin:
+    health_professionals:
+      edit:
+        title: Edit Health care professional
+      form:
+        cancel: Cancel
+      index:
+        actions: Actions
+        confirm: Confirm
+        destroy: Destroy
+        edit: Edit
+        new: New
+        title: Health care professionals
+      new:
+        title: New Health care professional
+      show:
+        back: Back
+        confirm: Confirm
+        destroy: Destroy
+        edit: Edit
+        title: Health care professional
   date:
     formats:
-      default:
-        "%m/%d/%Y"
-      with_weekday:
-        "%a %m/%d/%y"
-
+      default: "%m/%d/%Y"
+      with_weekday: "%a %m/%d/%y"
+  helpers:
+    actions: Actions
+    links:
+      back: Back
+      cancel: Cancel
+      confirm: Confirm
+      destroy: Destroy
+      edit: Edit
+      new: New
   time:
     formats:
-      default:
-        "%a, %b %-d, %Y at %r"
-      date:
-        "%b %-d, %Y"
-      short:
-        "%B %d"
-
+      date: "%b %-d, %Y"
+      default: "%a, %b %-d, %Y at %r"
+      short: "%B %d"
   titles:
     application: Doctolib-app

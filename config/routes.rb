@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-	namespace :admin do
-
+	scope "/admin", module: "admin" do
+		resources :health_professionals
 	end
 end
