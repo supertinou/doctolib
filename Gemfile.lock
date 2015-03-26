@@ -103,6 +103,7 @@ GEM
       activesupport
       capybara
       i18n
+    geocoder (1.2.8)
     globalid (0.3.3)
       activesupport (>= 4.1.0)
     high_voltage (2.2.1)
@@ -290,6 +291,7 @@ DEPENDENCIES
   factory_girl_rails
   flutie
   formulaic
+  geocoder
   high_voltage
   i18n-tasks
   jquery-rails
