@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-sm-3 col-md-6 map-container">
+  </div>
+  <div class="col-sm-9 col-md-6 col-md-offset-6">        
+    <div class="list-group">
+      <% @health_professionals.each do |p| %>
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading"><%= p.firstname %> <%= p.lastname %></h4>
+          <h5 class="list-group-item-text"><%= p.medical_specialities.collect(&:name).join(', ') %></h5>
+          <p><%= p.address %></p>
+        </a>
+      <% end %>
+    </div>
+  </div>
+</div>

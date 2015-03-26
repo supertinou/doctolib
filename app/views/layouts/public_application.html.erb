@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="ROBOTS" content="NOODP" />
+        <meta content="utf-8" http-equiv="encoding">  
+      <meta name="viewport" content="initial-scale=1" />
+        <title><%= title %></title>
+       <%= stylesheet_link_tag :application, media: "all" %>
+       <%= stylesheet_link_tag :public_application, media: "all" %>
+      <%= csrf_meta_tags %>
+    </head>
+
+     <body>
+
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="container-fluid">
+
+       
+        <%= yield %>
+      </div>
+
+
+
+    <%= render "application/javascript" %>
+  </body>
+</html>
+
