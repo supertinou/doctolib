@@ -23,6 +23,11 @@ RSpec.describe Admin::HealthProfessionalsController, :type => :controller do
   # This should return the minimal set of attributes required to create a valid
   # HealthProfessional. As you add validations to HealthProfessional, be sure to
   # adjust the attributes here as well.
+
+  before(:each) do
+   allow_any_instance_of(HealthProfessional).to receive(:geocode).and_return([1,1])
+  end
+
   let(:medical_speciality){ create :medical_speciality }
   let(:valid_attributes) {
     {firstname: 'Jean', lastname: 'Dupont', address: '5 rue de Menilmontant, 75011 PARIS', 
