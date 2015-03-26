@@ -3,7 +3,7 @@ class Admin::HealthProfessionalsController < AdminApplicationController
 
   # GET /health_professionals
   def index
-    @health_professionals = HealthProfessional.all
+    @health_professionals = HealthProfessional.includes(:medical_specialities).all
   end
 
   # GET /health_professionals/1
@@ -53,6 +53,6 @@ class Admin::HealthProfessionalsController < AdminApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def health_professional_params
-      params.require(:health_professional).permit(:firstname, :lastname, :address)
+      params.require(:health_professional).permit(:firstname, :lastname, :address, medical_speciality_ids: [])
     end
 end

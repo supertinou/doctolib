@@ -4,6 +4,18 @@
   <%= f.input :lastname %>
   <%= error_span(@health_professional[:lastname]) %>
   <%= f.input :address %>
+
+  <div class="panel panel-default">
+	  <div class="panel-heading">Medical specialities</div>
+	  	<div class="panel-body">
+	  <%= hidden_field_tag "health_professional[medical_speciality_ids][]", nil %>
+	  <% MedicalSpeciality.all.each do |speciality| %>
+	  <%= check_box_tag "health_professional[medical_speciality_ids][]", speciality.id, @health_professional.medical_speciality_ids.include?(speciality.id), id: dom_id(speciality) %>
+	  <%= label_tag dom_id(speciality), speciality.name %><br>
+	  <% end %>
+	</div>
+  </div>
+
   <%= error_span(@health_professional[:address]) %>
 
   <%= f.button :submit, :class => 'btn-primary' %>

@@ -10,6 +10,8 @@
   <dd><%= @health_professional.lastname %></dd>
   <dt><strong><%= model_class.human_attribute_name(:address) %>:</strong></dt>
   <dd><%= @health_professional.address %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:medical_specialities) %>:</strong></dt>
+  <dd><%= @health_professional.medical_specialities.collect(&:name).join(', ') %></dd>
 </dl>
 
 <%= link_to t('.back', :default => t("helpers.links.back")),
