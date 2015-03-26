@@ -7,12 +7,8 @@ body {
   padding-top: 10px;
 }
 
-/* Hide for mobile, show later */
-.map {
-  display: none;
-}
 @media (min-width: 768px) {
-  .map{
+  .map-container{
     position: fixed;
     top: 0px;
     bottom: 0;

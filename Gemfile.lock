@@ -106,6 +106,7 @@ GEM
     geocoder (1.2.8)
     globalid (0.3.3)
       activesupport (>= 4.1.0)
+    gmaps4rails (2.1.2)
     high_voltage (2.2.1)
     highline (1.7.1)
     hike (1.2.3)
@@ -258,6 +259,7 @@ GEM
     uglifier (2.7.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    underscore-rails (1.8.2)
     unicorn (4.8.3)
       kgio (~> 2.6)
       rack
@@ -292,6 +294,7 @@ DEPENDENCIES
   flutie
   formulaic
   geocoder
+  gmaps4rails
   high_voltage
   i18n-tasks
   jquery-rails
@@ -318,6 +321,7 @@ DEPENDENCIES
   title
   twitter-bootstrap-rails
   uglifier
+  underscore-rails
   unicorn
   web-console
   webmock
