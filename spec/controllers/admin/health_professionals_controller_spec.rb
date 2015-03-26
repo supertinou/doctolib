@@ -23,8 +23,11 @@ RSpec.describe Admin::HealthProfessionalsController, :type => :controller do
   # This should return the minimal set of attributes required to create a valid
   # HealthProfessional. As you add validations to HealthProfessional, be sure to
   # adjust the attributes here as well.
+  let(:medical_speciality){ create :medical_speciality }
   let(:valid_attributes) {
-    {firstname: 'Jean', lastname: 'Dupont', address: '5 rue de Menilmontant, 75011 PARIS'}
+    {firstname: 'Jean', lastname: 'Dupont', address: '5 rue de Menilmontant, 75011 PARIS', 
+      medical_speciality_ids: [medical_speciality.id]
+    }
   }
 
   let(:invalid_attributes) {

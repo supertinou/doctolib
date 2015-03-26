@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :medical_speciality do
-    name "MyString"
+    name "Dentiste"
   end
 
 end
