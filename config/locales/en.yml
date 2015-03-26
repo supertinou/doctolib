@@ -21,6 +21,26 @@ en:
         destroy: Destroy
         edit: Edit
         title: Health care professional
+    medical_specialities:
+      edit:
+        title: Edit Medical speciality
+      form:
+        cancel: Cancel
+      index:
+        actions: Actions
+        confirm: Confirm
+        destroy: Destroy
+        edit: Edit
+        new: New
+        title: Medical specialities
+      new:
+        title: New Medical speciality
+      show:
+        back: Back
+        confirm: Confirm
+        destroy: Destroy
+        edit: Edit
+        title: Medical speciality
   date:
     formats:
       default: "%m/%d/%Y"
