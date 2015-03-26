@@ -1,0 +1,8 @@
+<%= simple_form_for @medical_speciality, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name %>
+  <%= error_span(@medical_speciality[:name]) %>
+
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                medical_specialities_path, :class => 'btn btn-default' %>
+<% end %>
